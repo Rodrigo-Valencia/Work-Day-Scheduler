@@ -16,4 +16,4 @@ A calendar app that lets users schedule events for each hour of the day.
 [Link to the deployed website]()
 
 ### Reference 
-![Screenshot of index.html]()
+![Screenshot of index.html](./assests/Work-day-demo.gif)
