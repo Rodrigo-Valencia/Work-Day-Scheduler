@@ -16,4 +16,4 @@ A calendar app that lets users schedule events for each hour of the day.
 [Link to the deployed website](https://rodvalencia2319.github.io/Work-Day-Scheduler/)
 
 ### Reference 
-![Screenshot of index.html](./assests/Work-day-demo.gif)
+![Screenshot of index.html](./assests/Img/Work-day-demo.gif)
