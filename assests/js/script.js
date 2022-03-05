@@ -1,5 +1,5 @@
 moment(Date);
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
+$("#currentDay").text(moment().format('LLLL'));
 
 var currentTime = moment();
 currentTime = currentTime.startOf("hour");
