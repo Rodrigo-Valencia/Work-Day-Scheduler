@@ -18,24 +18,33 @@ function timeBlock() {
     });
 };
 
+$(".saveBtn").click(function(event) {
+    console.log(event.target.value);
+    // event.preventDefault();
+    const inputId = this.value;
+    const txtArea = document.getElementById(inputId);
+    console.log($(this).siblings(".txt").val());
+    var time = $(this).siblings(".hour").text();
+    console.log(time);
+    var plan = $(this).siblings(".txt").val();
+
+    localStorage.setItem(time, plan);
+});
+
 function usePlanner () {
     $(".hour").each(function() {
         var currHour = $(this).text();
-        var currPlan = localStorage.getItem(currHour);
 
+        var currPlan = localStorage.getItem(currHour);
+        console.log(currHour);
+        console.log(currPlan);
         if(currPlan !== null) {
-            $(this).siblings(".plan").val(currPlan);
+            $(this).siblings(".txt").val(currPlan);
         }
     });
 }
 
-$(".saveBtn").click(function(event) {
-    event.preventDefault
-    var time = $(this).siblings(".hour").text();
-    var plan = $(this).siblings(".plan").val();
 
-    localStorage.setItem(time, plan);
-});
 
 timeBlock();
 usePlanner();
